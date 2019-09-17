@@ -1,7 +1,7 @@
 ## Offerwall (Fyber FED)
 Offerwall with react hooks and an express server
 
-![offerwall](https://i.gyazo.com/1eca28b4b00af36ad225443eb38042df.png)
+![offerwall-gif](https://i.gyazo.com/b6ec71ca95c334a19adddf6e5fe02d9c.gif)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
