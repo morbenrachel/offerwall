@@ -13,14 +13,13 @@ function Ad(props) {
     clickUrl
   } = props.item;
 
-  const fallbackIcon =
-    "https://cdn6.aptoide.com/imgs/f/4/b/f4b44bc7a8d96f3f3c3e1f8911a84326_icon.png?w=120";
-
   const fallbackToken =
     "https://cdn4.iconfinder.com/data/icons/slot-machine-icons/200/casino_token-512.png";
 
+  const fallbackIcon =
+    "https://cdn6.aptoide.com/imgs/f/4/b/f4b44bc7a8d96f3f3c3e1f8911a84326_icon.png?w=120";
+
   const getTags = () => {
-    // console.log("tags");
     return _.map(tags, (tag, index) => {
       return (
         <div className="tag" key={index}>
