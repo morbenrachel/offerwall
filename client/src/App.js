@@ -8,10 +8,16 @@ function App() {
   const [tokenImage, setTokenImage] = useState("");
 
   const getData = async () => {
-    const response = await fetch("/api");
-    const body = await response.json();
-    if (response.status !== 200) throw Error(body.message);
-    return body;
+    try {
+      const response = await fetch("/api");
+      if (!response.ok) {
+        throw response;
+      }
+      const data = await response.json();
+      return data;
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   useEffect(() => {
@@ -23,7 +29,7 @@ function App() {
 
   const getItems = () => {
     const rows = _.map(items, (item, index) => {
-      return <Ad props={item} tokenImage={tokenImage} key={index} />;
+      return <Ad item={item} tokenImage={tokenImage} key={index} />;
     });
     return <div className="offerwall">{rows}</div>;
   };

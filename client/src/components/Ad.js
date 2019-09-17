@@ -11,7 +11,7 @@ function Ad(props) {
     howManyLeft,
     numOfTokens,
     clickUrl
-  } = props.props;
+  } = props.item;
 
   const fallbackIcon =
     "https://cdn6.aptoide.com/imgs/f/4/b/f4b44bc7a8d96f3f3c3e1f8911a84326_icon.png?w=120";
@@ -51,6 +51,7 @@ function Ad(props) {
       <div className="caption">{caption}</div>
       <img
         className="icon"
+        alt="icon"
         src={iconUrl}
         onError={e => handleErrorInSrc(e, fallbackIcon)}
       />
@@ -61,6 +62,7 @@ function Ad(props) {
       <div className="token">
         <img
           className="token-image"
+          alt="token"
           src={props.tokenImage}
           onError={e => handleErrorInSrc(e, fallbackToken)}
         />
