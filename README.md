@@ -9,7 +9,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Installation
 ```sh
 $ git clone https://github.com/morbenrachel/offerwall.git
-$ cd offerwall
+$ cd offerwall && yarn
+$ cd client && yarn
+```
+
+### Running the App from offerwall folder:
+```sh
 $ yarn dev
 ```
 
